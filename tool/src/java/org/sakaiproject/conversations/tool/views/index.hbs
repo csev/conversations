@@ -1,0 +1,16 @@
+<script src="/conversations-tool/js/manage-topics.js"></script>
+<script src="/conversations-tool/js/topic-listing.js"></script>
+
+<div class="vue-enabled">
+  {{#if isInstructor}}
+    <create-topic-wrapper baseurl="{{baseURL}}" groups_json="{{siteGroupsJSON}}"></create-topic-wrapper>
+  {{/if}}
+
+  <topic-listing baseurl="{{baseURL}}"
+                 initial_order_by="{{order_by}}"
+                 initial_order_direction="{{order_direction}}"
+                 initial_page="{{page}}"
+                 page_size="{{pageSize}}"
+                 :is_instructor="{{isInstructor}}">
+  </topic-listing>
+</div>

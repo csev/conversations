@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="{{{skinRepo}}}/tool_base.css" />
+        <link rel="stylesheet" type="text/css" href="/conversations-tool/css/conversations.css" />
+        <script src="/conversations-tool/js/vue.min.js"></script>
+        <script src="/library/webjars/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/library/webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="/conversations-tool/js/ckeditor-inline-12.1.0.js"></script>
+        <script src="/conversations-tool/js/rich-text.js"></script>
+        <script src="/conversations-tool/js/epoch-display-converter.js"></script>
+        <script src="/conversations-tool/js/topic-sidebar.js"></script>
+    </head>
+    <body>
+        <script>$(document.body).addClass("dark-mode");</script>
+
+        <div class="portletBody conversations-body">
+            {{{subpage this "body"}}}
+        </div>
+
+        <script>
+          new Vue({ el: '.vue-enabled' });
+        </script>
+    </body>
+</html>

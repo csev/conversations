@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<registration>
+  <tool id="sakai.conversations"
+        title="Conversations"
+        description="For all your conversation needs">
+    <category name="course"/>
+    <category name="project"/>
+  </tool>
+</registration>

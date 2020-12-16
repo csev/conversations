@@ -1,0 +1,5 @@
+Install NPM modules:
+    `npm i -g eslint eslint-plugin-vue eslint-config-eslint eslint-config-google vue`
+
+Example:
+    `eslint react.js`

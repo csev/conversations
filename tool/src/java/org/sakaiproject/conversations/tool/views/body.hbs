@@ -1,0 +1,19 @@
+{{#if flash}}
+    {{#each flash}}
+        <ul class="alert alert-{{@key}}">
+            {{#each this}}
+                <li>{{{t null this}}}</li>
+            {{/each}}
+        </ul>
+    {{/each}}
+{{/if}}
+
+{{#if errors}}
+    <ul class="alert alert-danger">
+        {{#each errors}}
+            <li> {{this.field}} - {{{t null this.errorCode}}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
+
+{{{subpage this subpage}}}
